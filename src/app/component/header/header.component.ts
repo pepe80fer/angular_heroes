@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-header',
@@ -6,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  buscarHeroe( termino: string) {
-    console.log(termino);
+  constructor( private router: Router) {
+
+  }
+
+  buscarHeroe( termino: string ) {
+    this.router.navigate( ['/buscar', termino] );
   }
 }
