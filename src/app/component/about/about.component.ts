@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  codigoVideo = 'u3VHDYXqSgs';
+
   constructor() { }
 
   ngOnInit() {

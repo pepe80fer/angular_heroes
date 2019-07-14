@@ -1,0 +1,28 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nombre Pipe</th>
+      <th scope="col">Valor</th>
+      <th scope="col">Pipe</th>
+      <th scope="col">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>capitalizado</td>
+      <td>gIoVaNnI nEuTa</td>
+      <td> {{ <code>'gIoVaNnI nEuTa' | capitalizado</code> }}</td>
+      <td>{{ 'gIoVaNnI nEuTa' | capitalizado }}</td>
+    </tr>
+    <tr>
+      <td>contrasena</td>
+      <td>G10CK123</td>
+      <td> {{ <code>'G10CK123' | contrasena: activar</code> }}
+        <span>Valor activar: <code>{{ activar }}</code></span>
+        <button (click)="activar = !activar; cambiaTextoBoton();" class="btn btn-primary ml-2">{{ textoBoton }}</button>
+      </td>
+      <td>{{ 'G10CK123' | contrasena: activar }}</td>
+    </tr>
+
+  </tbody>
+</table>

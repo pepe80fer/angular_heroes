@@ -18,6 +18,10 @@ import { HomeComponent } from './component/home/home.component';
 import { HeroeComponent } from './component/heroe/heroe.component';
 import { BuscarComponent } from './component/buscar/buscar.component';
 import { HeroeTarjetaComponent } from './component/heroe-tarjeta/heroe-tarjeta.component';
+import { CapitalizadoPipe } from './pipes/capitalizado_pipe';
+import { DomSeguroPipe } from './pipes/dom-seguro.pipe';
+import { PipesComponent } from './component/pipes/pipes.component';
+import { ContrasenaPipe } from './pipes/contrasena.pipe';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import { HeroeTarjetaComponent } from './component/heroe-tarjeta/heroe-tarjeta.c
     HomeComponent,
     HeroeComponent,
     BuscarComponent,
-    HeroeTarjetaComponent
+    HeroeTarjetaComponent,
+    CapitalizadoPipe,
+    DomSeguroPipe,
+    PipesComponent,
+    ContrasenaPipe
   ],
   imports: [
     BrowserModule,
